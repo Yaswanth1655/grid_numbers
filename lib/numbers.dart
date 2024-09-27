@@ -32,7 +32,8 @@ class _NumbersGridState extends State<NumbersGrid> {
       b += a;
       a = temp;
     }
-    return b == number || number == 0;
+    return b == number 
+    || number == 0;
   }
 
   @override
@@ -51,7 +52,7 @@ class _NumbersGridState extends State<NumbersGrid> {
         children: [
           OverflowBar(
             alignment: MainAxisAlignment.center,
-            overflowSpacing: 10,
+            overflowSpacing: 12,
             children: rules
                 .asMap()
                 .entries
